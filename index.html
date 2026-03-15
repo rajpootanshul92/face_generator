@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Face Generator</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div style="margin-top: 5px;">
+  <header class="app-header" style="margin-top: -19px;">
+    <img src="assets/logo.png" class="app-logo" style="width: auto; height: 70px; margin-top: -25px;">
+    <div class="header-content" style="margin-top: -25px;">
+      <h1>Face Generator</h1>
+    </div>
+  </header>
+
+
+
+  <div class="container" style="margin-top: -20px;">
+
+
+    <div class="left-panel">
+
+      <h3>Assets</h3>
+
+      <h4>Face</h4>
+      <div id="faces" class="elements"></div>
+
+      <h4>Eyes</h4>
+      <div id="eyes" class="elements"></div>
+
+      <h4>Eyebrows</h4>
+      <div id="eyebrows" class="elements"></div>
+
+      <h4>Nose</h4>
+      <div id="noses" class="elements"></div>
+
+      <h4>Lips</h4>
+      <div id="lips" class="elements"></div>
+
+      <h4>Hair</h4>
+      <div id="hairs" class="elements"></div>
+
+      <h4>Moustache</h4>
+      <div id="moustaches" class="elements"></div>
+
+      <h4>Beard</h4>
+      <div id="beards" class="elements"></div>
+
+      <h4>Left Ear</h4>
+      <div id="left_ears" class="elements"></div>
+
+      <h4>Right Ear</h4>
+      <div id="right_ears" class="elements"></div>
+
+    </div>
+
+
+
+    <div class="canvas-area">
+
+      <canvas id="canvas" width="350" height="440" style="margin-top: 0px;"></canvas>
+
+
+      <div class="controls">
+
+        <button onclick="deleteSelected()">Delete</button>
+
+        <button onclick="bringForward()">Layer Up</button>
+
+        <button onclick="sendBackward()">Layer Down</button>
+
+        <button onclick="downloadImage()">Download</button>
+
+      </div>
+      <div class="transform">
+
+          <label>Rotate</label>
+          <input id="rotateSlider" type="range" min="-3.14" max="3.14" step="0.01">
+
+          <label>X</label>
+          <input id="xSlider" type="range" min="-200" max="200">
+
+          <label>Y</label>
+          <input id="ySlider" type="range" min="-200" max="200">
+
+        </div>
+
+    </div>
+
+
+
+    <div class="right-panel">
+
+      <h3>Canvas Layers</h3>
+
+      <div id="layerPanel"></div>
+
+    </div>
+
+  </div>
+</div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
