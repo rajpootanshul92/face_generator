@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Face Generator</title>
 
 <link rel="stylesheet" href="style.css">
@@ -15,110 +13,95 @@
 <body>
 
 <header class="app-header">
-    
-    <img src="assets/logo.png" class="app-logo" alt="Logo">
 
-    <div class="header-content">
-        <h1>Face Generator</h1>
-    </div>
+<img src="assets/logo.png" class="app-logo">
+
+<div class="header-content">
+<h1>Face Generator</h1>
+</div>
 
 </header>
-
 
 
 <div class="container">
 
 
-    <!-- LEFT PANEL -->
-    <div class="left-panel">
+<div class="left-panel">
 
-        <h3>Assets</h3>
+<h3>Assets</h3>
 
-        <h4>Face</h4>
-        <div id="faces" class="elements"></div>
+<h4>Face</h4>
+<div id="faces" class="elements"></div>
 
-        <h4>Eyes</h4>
-        <div id="eyes" class="elements"></div>
+<h4>Eyes</h4>
+<div id="eyes" class="elements"></div>
 
-        <h4>Eyebrows</h4>
-        <div id="eyebrows" class="elements"></div>
+<h4>Eyebrows</h4>
+<div id="eyebrows" class="elements"></div>
 
-        <h4>Nose</h4>
-        <div id="noses" class="elements"></div>
+<h4>Nose</h4>
+<div id="noses" class="elements"></div>
 
-        <h4>Lips</h4>
-        <div id="lips" class="elements"></div>
+<h4>Lips</h4>
+<div id="lips" class="elements"></div>
 
-        <h4>Hair</h4>
-        <div id="hairs" class="elements"></div>
+<h4>Hair</h4>
+<div id="hairs" class="elements"></div>
 
-        <h4>Moustache</h4>
-        <div id="moustaches" class="elements"></div>
+<h4>Moustache</h4>
+<div id="moustaches" class="elements"></div>
 
-        <h4>Beard</h4>
-        <div id="beards" class="elements"></div>
+<h4>Beard</h4>
+<div id="beards" class="elements"></div>
 
-        <h4>Left Ear</h4>
-        <div id="left_ears" class="elements"></div>
+<h4>Left Ear</h4>
+<div id="left_ears" class="elements"></div>
 
-        <h4>Right Ear</h4>
-        <div id="right_ears" class="elements"></div>
-
-    </div>
-
-
-
-    <!-- CANVAS AREA -->
-    <div class="canvas-area">
-
-        <canvas id="canvas" width="350" height="440"></canvas>
-
-
-        <!-- CONTROLS -->
-        <div class="controls">
-
-            <button onclick="deleteSelected()">Delete</button>
-
-            <button onclick="bringForward()">Layer Up</button>
-
-            <button onclick="sendBackward()">Layer Down</button>
-
-            <button onclick="downloadImage()">Download</button>
-
-        </div>
-
-
-        <!-- TRANSFORM CONTROLS -->
-        <div class="transform">
-
-            <label>Rotate</label>
-            <input id="rotateSlider" type="range" min="-3.14" max="3.14" step="0.01">
-
-            <label>X</label>
-            <input id="xSlider" type="range" min="-200" max="200">
-
-            <label>Y</label>
-            <input id="ySlider" type="range" min="-200" max="200">
-
-        </div>
-
-    </div>
-
-
-
-    <!-- RIGHT PANEL -->
-    <div class="right-panel">
-
-        <h3>Canvas Layers</h3>
-
-        <div id="layerPanel"></div>
-
-    </div>
-
+<h4>Right Ear</h4>
+<div id="right_ears" class="elements"></div>
 
 </div>
 
 
+<div class="canvas-area">
+
+<canvas id="canvas" width="350" height="440"></canvas>
+
+<div class="controls">
+
+<button onclick="deleteSelected()">Delete</button>
+<button onclick="bringForward()">Layer Up</button>
+<button onclick="sendBackward()">Layer Down</button>
+<button onclick="downloadImage()">Download</button>
+
+</div>
+
+<div class="transform">
+
+<label>Rotate</label>
+<input id="rotateSlider" type="range" min="-3.14" max="3.14" step="0.01">
+
+<label>X</label>
+<input id="xSlider" type="range" min="-200" max="200">
+
+<label>Y</label>
+<input id="ySlider" type="range" min="-200" max="200">
+
+</div>
+
+</div>
+
+
+<div class="right-panel">
+
+<h3>Canvas Layers</h3>
+
+<div id="layerPanel"></div>
+
+</div>
+
+
+</div>
 
 <script src="script.js"></script>
 
