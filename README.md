@@ -120,4 +120,3 @@ This project helped me understand:
 📌 Author
 
 Your Name - Anshul Rajpoot
-Branch- Electronics and Communication Engineering
