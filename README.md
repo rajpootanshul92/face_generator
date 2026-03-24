@@ -1,4 +1,5 @@
 # 🎨 Interactive Face Builder
+<img width="1024" height="550" alt="image" src="https://github.com/user-attachments/assets/02329de9-2061-4ce2-a929-b77557a7b27b" />
 
 An interactive **face generation web application** built using **HTML5 Canvas and JavaScript**, allowing users to create custom avatars by combining modular facial components like eyes, nose, hair, and more.
 
