@@ -117,4 +117,7 @@ This project helped me understand:
 * Managing complex state in frontend applications
 
 ---
+📌 Author
 
+Your Name - Anshul Rajpoot
+Branch- Electronics and Communication Engineering
